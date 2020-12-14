@@ -1,0 +1,444 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+:root {
+  --spacing-xxs: 0.25rem;
+}
+
+li {
+  display: inline;
+}
+
+a {
+  text-decoration: none;
+}
+
+.header {
+  background-image: url("../image/hero1.png");
+  width: 100%;
+  height: 50rem;
+  object-fit: contain;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  position: fixed;
+  width: 100%;
+  z-index: 1;
+  padding: 0.8rem;
+  margin-top: 2rem;
+}
+
+.nav a {
+  overflow: hidden;
+  font-family: Roboto;
+  font-size: 1rem;
+  padding: 0.8rem 1rem;
+  color: #ffffff
+}
+
+.search {
+  height: 0.85rem;
+  width: 0.85rem;
+}
+
+.section-down {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding-top: 16rem;
+  color: #ffffff
+}
+
+.section-down h1 {
+  font-family: Roboto;
+  font-size: 5rem;
+  font-weight: bold;
+  text-align: center;
+}
+
+.section-down p {
+  font-family: Roboto Regular;
+  font-size: 1.25rem;
+  text-align: center;
+  max-width: 35rem;
+  margin-top: 1rem;
+}
+
+.btn {
+  width: 9rem;
+  height: 4rem;
+  border-radius: 0.25rem;
+  box-shadow: 0 0.125rem 2.5rem 0 rgba(0, 0, 0, 0.9);
+  background-color: #27ad6c;
+  margin-top: 1.5rem;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+
+.btn:hover {
+  opacity: 0.8;
+}
+
+.arrow {
+  height: 1rem;
+  width: 1rem;
+}
+
+.section-card h1,
+.section-provide h1 {
+  font-family: Roboto;
+  font-size: 3rem;
+  line-height: 1;
+  text-align: center;
+  color: #9b9b9b;
+  padding-top: 8%;
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 2%;
+}
+
+.cards h2 {
+  text-align: center;
+  font-family: Roboto;
+  font-size: 1.2rem;
+  font-weight: bold;
+  line-height: 1.33;
+  color: #27ad6c;
+  margin-top: 2rem;
+}
+
+.cards p {
+  text-align: center;
+  font-family: Roboto;
+  font-size: 0.9rem;
+  line-height: 1.57;
+  color: #4a4a4a;
+  max-width: 19rem;
+  opacity: 0.78;
+  margin-top: 2%;
+}
+
+.card {
+  margin: 2.5%;
+  transition: all 0.5s;
+}
+
+.card:hover {
+  padding: 1%;
+  box-shadow: 0.15rem #888888;
+}
+
+.section-link {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 5rem;
+  font-family: Roboto;
+}
+
+.section-link h1,
+.picture h1 {
+  font-family: Roboto;
+  font-size: 3rem;
+  line-height: 1;
+  text-align: center;
+  color: #9b9b9b;
+}
+
+.section-link a {
+  color: #27ad6c;
+}
+
+.section-link h3 {
+  font-family: Roboto;
+  font-size: 1rem;
+  font-weight: bold;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  margin-bottom: 1%;
+}
+
+.part {
+  margin: 1.9rem 0 1rem 0;
+}
+
+.section-link hr {
+  background-color: #9b9b9b;
+  margin-top: 1.25rem;
+  opacity: 0.3;
+}
+
+.latest span {
+  font-family: Roboto;
+  font-size: 0.8rem;
+  font-weight: bold;
+  color: #9b9b9b;
+}
+
+.vl {
+  margin-left: 9%;
+  width: 0.07rem;
+  height: auto;
+  background-color: #88c542;
+  opacity: 0.5;
+}
+
+.end {
+  display: flex;
+  justify-content: center;
+  margin: 5% 5% 9% 0;
+}
+
+.hl1,
+.hl2 {
+  width: 13rem;
+  height: 0.06rem;
+  background-color: #88c542;
+  margin-top: 9rem;
+  opacity: 0.6;
+}
+
+.ninja {
+  width: 3rem;
+  height: 3rem;
+  margin-top: 7rem;
+}
+
+.photo {
+  margin-top: 2rem;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.pic {
+  width: 33.33%;
+  transition: all 0.5s;
+  background-color: #CCCCFF;
+}
+
+.picture h4 {
+  font-size: 0.9rem;
+  font-weight: bold;
+  font-style: italic;
+  text-align: center;
+  color: #9b9b9b;
+}
+
+.pic:hover {
+  box-shadow: 0.19rem #ccc;
+  padding: 2%;
+}
+
+.section-provide {
+  background-color: #423633;
+}
+
+.section-provide h1 {
+  margin-bottom: 3%;
+  color: #ffffff;
+}
+
+.provides {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  text-align: justify;
+  font-weight: bold;
+  color: #ffffff;
+}
+
+.provides h4 {
+  font-family: Roboto;
+  font-size: 1.15rem;
+  font-weight: bold;
+}
+
+.provides p {
+  width: 15rem;
+  opacity: 0.5;
+  font-family: Roboto;
+  font-size: 0.9rem;
+  margin-top: 5%;
+}
+
+.parts {
+  display: flex;
+  justify-items: center;
+  padding: 2%;
+}
+
+.section-provide button {
+  margin: 5% 0 7% 45%;
+}
+
+.heel {
+  width: 3.2rem;
+  height: 3rem;
+  object-fit: contain;
+  opacity: 0.9;
+  margin: 0 0 5% 48%;
+}
+
+.footer {
+  width: 100%;
+  height: 2.5rem;
+  background-color: #333333;
+  overflow: hidden;
+}
+
+.section-first {
+  display: flex;
+  justify-content: space-between;
+  font-family: Roboto;
+  font-weight: normal;
+  color: #ffffff;
+  margin: 1% 3% 1% 3%;
+}
+
+.section-first a,
+.section-first p {
+  font-size: 0.80rem;
+}
+
+.nav a.active {
+  color: #70c919;
+}
+
+.nav a:hover {
+  color: #70c919;
+}
+
+/* Media queries */
+
+
+@media screen and (max-width:67rem) {
+  .section-link {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .vl {
+    display: none;
+  }
+
+  .photo {
+    justify-content: space-around;
+  }
+
+  .pic {
+    width: 50%;
+  }
+
+  .pic:hover {
+    padding: 4%;
+  }
+
+  .provides {
+    flex-direction: column;
+    margin-left: 30%;
+  }
+
+  .part {
+    margin-bottom: 5%;
+  }
+
+  .parts {
+    margin-bottom: 5%;
+  }
+}
+
+@media screen and (max-width:47rem) {
+  .section-down h1 {
+    font-size: 2.5rem;
+  }
+
+  .section-down p {
+    font-size: 1rem;
+  }
+
+  .btn {
+    width: 7rem;
+    height: 3rem;
+    font-size: 0.6rem;
+  }
+
+  .logo {
+    width: 3.5rem;
+    height: 1.78rem;
+  }
+
+  .navbar a {
+    padding: 0.7rem 0.9rem;
+    font-size: 0.55rem;
+  }
+
+  .pic {
+    width: 100%;
+  }
+
+  .pic:hover {
+    padding: 10%;
+  }
+
+  .provides {
+    margin-left: 5%;
+  }
+
+  .section-card h1,
+  .section-provide h1,
+  .section-link h1,
+  .picture h1 {
+    font-size: 2.5rem;
+  }
+}
+
+@media screen and (max-width:35rem) {
+  .search {
+    display: none;
+  }
+
+  .navbar a {
+    padding: 0.45rem 0.60rem;
+  }
+
+  .provides h4 {
+    font-size: 0.9rem;
+  }
+
+  .parts {
+    width: 100%;
+  }
+
+  .provides p {
+    font-size: 0.65rem;
+  }
+
+  .provide-pic {
+    height: 2.5rem;
+    width: 2.5rem;
+  }
+
+  .provides {
+    margin-left: none;
+  }
+
+  .section-first p {
+    margin-top: 2%;
+  }
+
+  .section-first p,
+  .section-first a {
+    font-size: 0.60rem;
+  }
+}
